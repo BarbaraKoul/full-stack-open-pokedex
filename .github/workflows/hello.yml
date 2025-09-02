@@ -3,8 +3,10 @@ name: Hello World Workflow
 on:
   push:
     branches:
-      - main  # or 'master', depending on your default branch
-
+      - main 
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
 jobs:
   hello_job:
     runs-on: ubuntu-latest
