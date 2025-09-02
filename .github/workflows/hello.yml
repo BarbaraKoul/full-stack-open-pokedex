@@ -6,8 +6,18 @@ on:
       - main  # or 'master', depending on your default branch
 
 jobs:
-  build:
+  hello_job:
     runs-on: ubuntu-latest
     steps:
       - name: Say hello
         run: echo "Hello World!"
+  date_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Now it is
+        run: date  
+  directory:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Directory content
+        run: ls -l
