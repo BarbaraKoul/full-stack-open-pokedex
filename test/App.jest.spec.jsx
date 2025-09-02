@@ -6,6 +6,8 @@ import '@testing-library/jest-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 import App from '../src/App'
 
+global.React=React
+
 jest.mock('axios')
 
 describe('<App />', () => {
