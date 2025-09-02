@@ -6,6 +6,6 @@ export default defineConfig({
     command: 'npm run start',
     port: 8080,
     timeout: 120 * 1000,
-    reuseExistingServer: !process.env.CI, 
+    reuseExistingServer: !process.env.CI,
   },
 })
